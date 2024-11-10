@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <title>O Cristal Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="Imagens/cenario-passo0.jpg" alt="">
+            <p>O reino de Aldoria esta sendo ameaçado pelas trevas, pois seu antigo Cristal do Equilíbrio foi roubado por um feiticeiro maligno, lançando caos e medo sobre o povo. O Rei, em desespero, convoca você, um jovem e destemido aventureiro:
+                “Somente você pode salvar nosso reino. Recupere o cristal e derrote o feiticeiro!”
+                Você enfrentaria perigos e mistérios, em uma jornada onde o destino do reino está em suas mãos?</p>
+            <button class="btn-proximo" data-proximo="1">Aceitar Missão</button>
+            <button class="btn-proximo" data-proximo="2">Recusar Missão</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="Imagens/cenario-passo1.jpg">
+            <p>Missão Aceita! É hora de decidir qual caminho seguir. Escolha sua classe, pois cada uma trará habilidades únicas para enfrentar os desafios à frente.
+                Qual será sua especialidade?</p>
+            <button class="btn-proximo" data-proximo="3">Guerreiro</button>
+            <button class="btn-proximo" data-proximo="4">Arqueiro</button>
+            <button class="btn-proximo" data-proximo="5">Mago</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="Imagens/cenario-passo2.png">
+            <p>Você recusa a missão. O Rei suspira em desapontamento, e o reino logo cai sob a escuridão do feiticeiro. Sem um herói para detê-lo, a esperança se perde e o mal reina.
+                Fim da história.</p>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="Imagens/cenario-passo3.webp">
+            <p>Valente guerreiro, nosso reino está em perigo. O Cristal do Equilíbrio foi roubado pelo feiticeiro sombrio. Existem dois caminhos para chegar até ele. O primeiro caminho passa pela Floresta das Sombras, uma área escura e traiçoeira. O segundo caminho atravessa o Deserto das Almas Perdidas, um lugar árido e cheio de mistérios. Escolha sabiamente</p>
+            <button class="btn-proximo" data-proximo="6">Floresta das Sombras</button>
+            <button class="btn-proximo" data-proximo="7">Deserto das Almas Perdidas</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="Imagens/cenario-passo6.png">
+            <p>Você escolhe seguir pela Floresta das Sombras. A floresta é escura e misteriosa, cheia de sons estranhos e sombras. No caminho, você encontra uma bruxa que oferece ajuda em troca de recuperar seu livro de feitiços roubado por goblins.</p>
+            <button class="btn-proximo" data-proximo="8">Recuperar o livro</button>
+            <button class="btn-proximo" data-proximo="9">Seguir Missão</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="Imagens/cenario-passo8.png">
+            <p>Você derrota os goblins em uma caverna próxima e recupera o livro. Como agradecimento a bruxa te dá um amuleto de proteção e o encanta para que ele te guie até o covil do feiticeiro.</p>
+            <button class="btn-proximo" data-proximo="10">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="Imagens/cenario.passo10.png">
+            <p>Você chega ao covil do feiticeiro e, com a ajuda do amuleto, derrota o inimigo, recuperando o Cristal do Equilíbrio.</p>
+            <button class="btn-proximo" data-proximo="11">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="Imagens/cenario.passo11.png">
+            <p>Você retorna ao reino com o cristal, restaurando a paz e sendo celebrado como herói.
+                Fim...
+            </p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="Imagens/cenario.passo9.png">
+            <p> Abruxa, irritada com a recusa, lança uma maldição sobre você. A maldição drena sua força e resistência, tornando a floresta ainda mais perigosa. Sob a influência da maldição, você encontra obstáculos e criaturas ainda mais ferozes. Sua progressão é extremamente difícil e você se sente enfraquecido.</p>
+            <button class="btn-proximo" data-proximo="12">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="Imagens/cenario-passo12.png">
+            <p> Você chega ao covil do feiticeiro sem o amuleto de proteção. A batalha é muito difícil e, sem a proteção mágica, você acaba sendo derrotado pelo feiticeiro.</p>
+            <button class="btn-proximo" data-proximo="13">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="Imagens/cenario.passo13.png">
+            <p>Com sua derrota, o feiticeiro mantém o Cristal do Equilíbrio, e o reino permanece em ruínas, mergulhado na escuridão. Fim...</p>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="Imagens/cenario-passo7.png">
+            <p>Você escolhe seguir pelo Deserto das Almas Perdidas. O sol escaldante e a paisagem árida tornam a jornada exaustiva. No meio do deserto, você enfrenta tempestades de areia e criaturas hostis. Sua força é continuamente drenada pelo calor implacável.</p>
+            <button class="btn-proximo" data-proximo="14">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="Imagens/cenario-passo14.png">
+            <p>Sem recursos adequados e exausto pelo ambiente severo, você começa a sentir a fadiga extrema. A cada passo, o desespero aumenta. Ao chegar ao covil do feiticeiro, você já está muito enfraquecido. A batalha é breve e implacável, e sem as forças necessárias, você é facilmente derrotado.</p>
+            <button class="btn-proximo" data-proximo="15">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <img src="Imagens/cenario-passo2.png">
+            <p>O feiticeiro mantém o Cristal do Equilíbrio e continua a espalhar sua escuridão pelo reino. Sua jornada no deserto termina em derrota.</p>
+        </div>
+    
+        <div class="passo" id="passo-4">
+            <img src="Imagens/cenario-passo4.png">
+            <p>Com precisão e destreza, você recebe seu arco e flechas encantadas, prontas para enfrentar qualquer ameaça. Para continuar é preciso que você saiba que existem dois caminhos que levam ao covil do feiticeiro. O primeiro passa pela traiçoeira Caverna das Tempestades, e o segundo atravessa o frio intenso e os ventos fortes das Montanhas Geladas. Escolha sabiamente, pois cada caminho apresenta perigos únicos</p>
+            <button class="btn-proximo" data-proximo="16">Caverna das Tempestades</button>
+            <button class="btn-proximo" data-proximo="17">Montanhas Geladas</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="Imagens/cenario-passo16.png">
+            <p>Você escolhe seguir pela Caverna das Tempestades. A caverna é escura e ecoa com trovões, enquanto relâmpagos iluminam brevemente o caminho. Logo na entrada, você encontra pedregulhos bloqueando o caminho e usa sua força para removê-los. Dentro da caverna, as tempestades elétricas se intensificam, e você avança cuidadosamente, desviando dos raios a cada passo.</p>
+            <button class="btn-proximo" data-proximo="18">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="Imagens/cenario-passo18.png">
+            <p>No coração da caverna, você encontra um guardião elemental poderoso controlado pelo feiticeiro. Apesar da batalha intensa e de sua bravura, os ataques elétricos do guardião superam suas defesas. Enfraquecido, você é derrotado, e a caverna se torna seu túmulo.</p>
+            <button class="btn-proximo" data-proximo="19">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="Imagens/cenario-passo2.png">
+            <p>Com sua derrota, o feiticeiro mantém o Cristal do Equilíbrio, e o reino continua mergulhado nas trevas. A missão falha e o povo de Aldoria perde sua última esperança de salvação. Fim...</p>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <img src="Imagens/cenario.passo17.png">
+            <p>Você escolhe seguir pela Rota das Montanhas Geladas, enfrentando ventos frios e neve. No início da trilha, você escala um penhasco íngreme com cuidado. No meio do caminho, encontra o Espírito da Neve, que propõe ajudá-lo a atravessar as montanhas se você recuperar a flor mágica "Lótus das Neves" de uma montanha próxima.</p>
+            <button class="btn-proximo" data-proximo="20">Aceitar</button>
+            <button class="btn-proximo" data-proximo="21">Recusar</button>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <img src="Imagens/cenario-passo20.png">
+            <p>Você aceita a proposta do Espírito da Neve e se dirige ao topo de uma montanha próxima, onde a flor mágica "Lótus das Neves" floresce apenas uma vez a cada século. Durante a escalada, você enfrenta ventos cortantes e caminhos traiçoeiros. Com determinação, você supera esses desafios e encontra a flor mágica.</p>
+            <button class="btn-proximo" data-proximo="22">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <img src="Imagens/cenario-passo22.png">
+            <p>Você retorna ao Espírito da Neve e lhe entrega a "Lótus das Neves". Em agradecimento, ele usa seus poderes para proteger você dos perigos das montanhas e fornecendo um caminho seguro até o covil do feiticeiro. Ele também envolve suas armas com a essência do gelo, tornando-as mais poderosas.</p>
+            <button class="btn-proximo" data-proximo="23">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-23">
+            <img src="Imagens/cenario-passo23.png">
+            <p>No topo da montanha, você encontra o covil do feiticeiro. Com as armas encantadas pelo Espírito da Neve e a proteção mágica, você enfrenta e derrota o feiticeiro em uma batalha épica, recuperando o Cristal do Equilíbrio.</p>
+            <button class="btn-proximo" data-proximo="24">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-24">
+            <img src="Imagens/cenario.passo11.png">
+            <p>Com o cristal em mãos, você desce as montanhas e retorna ao reino. O rei e o povo celebram sua vitória, e a paz é restaurada.</p>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <img src="Imagens/cenario-passo21.png">
+            <p>Você decide recusar a proposta do Espírito da Neve, preferindo continuar sua jornada sozinho. O Espírito fica irado com sua recusa, suas feições tornando-se ainda mais ameaçadoras. Em sua fúria, o Espírito da Neve se transforma em um poderoso adversário, aumentando de tamanho e invocando uma tempestade de neve ao seu redor.</p>
+            <button class="btn-proximo" data-proximo="25">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-25">
+            <img src="Imagens/cenario-passo25.png">
+            <p>Você é forçado a lutar contra o Espírito da Neve. A batalha é intensa, com o Espírito usando ataques gelados e convocando criaturas de gelo para lutar ao seu lado. Apesar de sua bravura e habilidades, a força esmagadora do Espírito começa a superar suas defesas.</p>
+            <button class="btn-proximo" data-proximo="26">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-26">
+            <img src="Imagens/cenario-passo2.png">
+            <p>Enfraquecido pelos ataques incessantes do Espírito e sem a ajuda mística que ele poderia ter oferecido, você é finalmente derrotado. Com sua derrota, o Cristal do Equilíbrio permanece nas mãos do feiticeiro, e o reino continua mergulhado nas trevas.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="Imagens/cenario-passo5.png">
+            <p>Agora que você escolheu a categoria de mago, recebeu seu cajado e seus grimórios de feitiços. Com seus novos equipamentos, está pronto para iniciar sua jornada. Existem dois caminhos que levam ao possível esconderijo do feiticeiro maligno: o misterioso Pântano das Névoas e as Ruínas Antigas repletas de segredos. Escolha sabiamente, pois cada caminho apresenta perigos únicos. A sorte do reino está em suas mãos.</p>
+            <button class="btn-proximo" data-proximo="27">Antigas Ruínas</button>
+            <button class="btn-proximo" data-proximo="28">Pantano das Névoas</button>
+        </div>
+
+        <div class="passo" id="passo-27">
+            <img src="Imagens/cenario-passo27.png">
+            <p>Você escolhe seguir pelas Ruínas Antigas, repletas de armadilhas e sentinelas mágicos. No começo, usa um feitiço de levitação para remover escombros bloqueando o caminho. No meio das ruínas, encontra o Guardião Fantasma, um espírito antigo que oferece ajuda em troca de recuperar uma relíquia escondida em uma câmara secreta, essencial para manter sua ligação com o mundo dos vivos.</p>
+            <button class="btn-proximo" data-proximo="29">Aceitar</button>
+            <button class="btn-proximo" data-proximo="32">Recusar</button>
+        </div>
+
+        <div class="passo" id="passo-29">
+            <img src="Imagens/cenario-passo29.png">
+            <p>Aceitando a proposta, você enfrenta armadilhas antigas e quebra-cabeças mágicos para recuperar a relíquia na câmara secreta. Em agradecimento, o Guardião Fantasma guia você pelos caminhos seguros das ruínas, desativa armadilhas e fortalece seus feitiços com energia ancestral, tornando-os mais poderosos.</p>
+            <button class="btn-proximo" data-proximo="30">Prosseguir</button>
+        </div>
+        <div class="passo" id="passo-30">
+            <img src="Imagens/cenario-passo30.png">
+            <p>No final das ruínas, você encontra o covil do feiticeiro. Com os feitiços aprimorados pelo Guardião Fantasma e as orientações sobre os pontos fracos do feiticeiro, você enfrenta e derrota o feiticeiro em uma batalha épica, recuperando o Cristal do Equilíbrio.</p>
+            <button class="btn-proximo" data-proximo="31">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-31">
+            <img src="Imagens/cenario-passo31.png">
+            <p>Com o cristal em mãos, você deixa as ruínas e retorna ao reino. O rei e o povo celebram sua vitória, e a paz é restaurada.</p>
+        </div>
+
+        <div class="passo" id="passo-32">
+            <img src="Imagens/cenario-passo32.png">
+            <p>Você decide recusar a proposta do Guardião Fantasma, preferindo continuar sua jornada sozinho. O Guardião, irado com sua recusa, se transforma, suas feições tornando-se sombrias e ameaçadoras.
+                Em sua fúria, o Guardião Fantasma levanta um exército de esqueletos dos homens que pereceram ali há muitos séculos. Os esqueletos, envoltos em uma aura espectral, emergem das sombras e das ruínas, prontos para atacar.</p>
+            <button class="btn-proximo" data-proximo="33">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-33">
+            <img src="Imagens/cenario-passo33.png">
+            <p>Você é forçado a lutar contra o exército de esqueletos comandado pelo Guardião Fantasma. A batalha é intensa, com os esqueletos atacando de todas as direções e o Guardião usando ataques espectrais poderosos. Apesar de sua bravura e habilidades mágicas, a força esmagadora dos esqueletos e do Guardião começa a superar suas defesas.</p>
+            <button class="btn-proximo" data-proximo="34">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-34">
+            <img src="Imagens/cenario.passo13.png">
+            <p>Enfraquecido pelos ataques incessantes do exército de esqueletos e do Guardião, você é finalmente derrotado. Com sua derrota, o Cristal do Equilíbrio permanece nas mãos do feiticeiro, e o reino continua mergulhado nas trevas.</p>
+        </div>
+        
+        <div class="passo" id="passo-28">
+            <img src="Imagens/cenario-passo28.png">
+            <p>Você escolhe seguir pelo Pântano das Névoas, enfrentando névoa densa e águas traiçoeiras. Com magia, cria uma ponte de energia para atravessar um trecho alagadiço. No entanto, a névoa espessa faz você perder o senso de direção, levando-o mais profundamente no pântano.</p>
+            <button class="btn-proximo" data-proximo="35">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-35">
+            <img src="Imagens/cenario-passo35.png">
+            <p>Enfrentando ataques constantes de criaturas ocultas na névoa, seus feitiços são turvados e sua energia drenada, dificultando sua defesa. As criaturas místicas do pântano tornam-se cada vez mais agressivas, e a névoa prejudica sua visão e controle dos feitiços.</p>
+            <button class="btn-proximo" data-proximo="36">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-36">
+            <img src="Imagens/cenario-passo2.png">
+            <p>No confronto final, exausto e sem esperança, você é cercado por criaturas místicas. A batalha é desequilibrada e você é rapidamente subjugado. Com sua derrota, o Cristal do Equilíbrio permanece nas mãos do feiticeiro e o reino continua mergulhado nas trevas.</p>
+        </div>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
